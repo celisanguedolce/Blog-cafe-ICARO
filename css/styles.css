@@ -1,0 +1,191 @@
+:root {
+  --fuentetitulos: "PT Sans", sans-serif;
+  --fuenteparrafos: "Open Sans", sans-serif;
+
+  /**********colores********/
+  --primario: #784d36;
+  --blanco: #ffff;
+  --negro: #000;
+  --gris: #e1e1e1;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuenteparrafos);
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+/*****************GLOBALES DEL PROYECTO**************************/
+
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fuentetitulos);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*HEADER*/
+
+.header {
+  background-image: url(../img/banner.jpg);
+  height: 45rem;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.header__texto {
+  text-align: center;
+  color: var(--blanco);
+  margin: 0;
+}
+
+/*** BARRA DE NAVEGACION**/
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--blanco);
+}
+
+.logo__nombre {
+  font-weight: 400;
+  text-align: center;
+}
+.logo__bold {
+  font-weight: 700;
+}
+
+.navegacion {
+  display: flex;
+  gap: 2rem;
+}
+.navegacion__enlaces {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+}
+
+@media (max-width: 768px) {
+  .barra-superior,
+  .navegacion {
+    flex-direction: column;
+  }
+}
+
+/*** MAIN***/
+
+@media (min-width: 768px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+}
+
+/**** entradas del blog***/
+
+.entradas {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+
+.entradas:last-of-type {
+  margin: 0;
+  border-bottom: none;
+}
+
+.boton {
+  display: block;
+  font-family: var(--fuentetitulos);
+  color: var(--blanco);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.boton--blog {
+  background-color: var(--negro);
+}
+
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block;
+  }
+}
+
+/*****ASIDE*******/
+
+.nuestros-cursos {
+  list-style: none;
+  padding: 0;
+}
+
+.widget-cursos {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+
+.widget-cursos:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.widget-curso__label {
+  font-family: var(--fuentetitulos);
+  font-weight: bold;
+}
+
+.widget-curso__precio {
+  font-weight: 400;
+}
+
+.boton--aside {
+  background-color: var(--primario);
+}
