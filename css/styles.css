@@ -5,6 +5,7 @@
   /**********colores********/
   --primario: #784d36;
   --blanco: #ffff;
+  --negroclaro: #634949;
   --negro: #000;
   --gris: #e1e1e1;
 }
@@ -157,6 +158,11 @@ img {
 
 .boton--blog {
   background-color: var(--negro);
+  transition: background-color 0.7s ease 0.2s;
+}
+
+.boton--blog:hover {
+  background-color: var(--negroclaro);
 }
 
 @media (min-width: 768px) {
@@ -289,4 +295,14 @@ img {
 
 .campo__field--textarea {
   height: 10rem;
+}
+
+/**enlace a instagram**/
+
+.enlace {
+  text-align: center;
+}
+
+.enlace-externo {
+  margin-top: 4rem;
 }
