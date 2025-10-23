@@ -148,6 +148,11 @@ img {
   padding: 1rem 3rem;
   font-weight: 700;
   margin-bottom: 2rem;
+  border: none;
+}
+
+.boton:hover {
+  cursor: pointer;
 }
 
 .boton--blog {
@@ -227,6 +232,12 @@ img {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .cursos {
+    grid-template-columns: 1fr;
+  }
+}
+
 .cursos:last-of-type {
   border: none;
 }
@@ -235,4 +246,47 @@ img {
   width: 80%;
   margin-left: 2rem;
   margin-bottom: 2rem;
+}
+
+/**entradas del blog**/
+
+.img-centrado {
+  text-align: center;
+}
+
+.imagen-entrada {
+  width: 80%;
+  margin-top: 4rem;
+}
+
+/**pagina de contacto**/
+.contacto-bg {
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+  border: 1px solid var(--gris);
+}
+
+.campo {
+  display: flex;
+}
+
+.campo__label {
+  flex: 0 0 9rem;
+}
+
+.campo__field {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+.campo__field--textarea {
+  height: 10rem;
 }
