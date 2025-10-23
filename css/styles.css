@@ -177,12 +177,14 @@ img {
   margin-bottom: 0;
 }
 
-.widget-curso__label {
+.widget-curso__label,
+.curso__label {
   font-family: var(--fuentetitulos);
   font-weight: bold;
 }
 
-.widget-curso__precio {
+.widget-curso__precio,
+.curso__precio {
   font-weight: 400;
 }
 
@@ -213,4 +215,24 @@ img {
   .sobre-nosotros {
     grid-template-columns: 1fr;
   }
+}
+
+/** pagina de cursos**/
+
+.cursos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+
+.cursos:last-of-type {
+  border: none;
+}
+
+.cursos__imagen {
+  width: 80%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
